@@ -1,7 +1,7 @@
 # ImageTagger
 Take a photo with you Android phone and know what these things are called in another language.Showing you what's in the picture in two languages by tags, based on GPT4o.Can be useful learning  new languages. 
-![showcase1](ImageTagger/src/main/res/drawable/showcase1.jpg)
-![showcase2](ImageTagger/src/main/res/drawable/showcase2.jpg)
+![showcase1](/src/main/res/drawable/showcase1.jpg)
+![showcase2](/src/main/res/drawable/showcase2.jpg)
 
 GPT4o secrect key is nessary, you can bought from OpenAI officially or choose any cheaper proxy way that support image upload. I've attached an one dollar key in the programe so maybe you can try for free.
 

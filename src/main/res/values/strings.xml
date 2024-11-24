@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Image Tagger</string>
+    <string name="content_description_setting">setting icon</string>
+    <string name="content_description_image_tagger">ImageTagger icon</string>
+    <string name="content_description_wordbook">wordbook icon</string>
+    <string name="content_description_gallery">photo album icon</string>
+    <string name="content_description_camera">camera icon</string>
+    <string name="button_text_send">send</string>
+    <string name="save_button_text">save</string>
+</resources>

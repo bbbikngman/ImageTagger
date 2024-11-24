@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 顶部图标布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- 左侧设定图标 -->
+        <ImageView
+            android:id="@+id/icon_setting"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/setting"
+            android:layout_weight="1"
+            android:contentDescription="@string/content_description_setting"
+            android:layout_gravity="start"
+            android:onClick="openSettingsActivity"
+            />
+
+        <!-- 中间 imageTagger 图标 -->
+        <ImageView
+            android:id="@+id/icon_image_tagger"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@drawable/image_tagger"
+            android:contentDescription="@string/content_description_image_tagger"
+            android:layout_gravity="center"
+            />
+
+        <!-- 右侧单词本图标 -->
+        <ImageView
+            android:id="@+id/icon_wordbook"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@drawable/wordbook"
+            android:contentDescription="@string/content_description_wordbook"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+    <!-- 照片展示区域 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray">
+
+        <!-- 图片展示 -->
+        <ImageView
+            android:id="@+id/image_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- 底部按钮布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- 左侧图库图标 -->
+        <ImageView
+            android:id="@+id/icon_gallery"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/photo_album"
+            android:contentDescription="@string/content_description_gallery"
+            android:layout_gravity="start"
+            android:layout_marginEnd="16dp" />
+
+        <!-- 中间发送按钮 -->
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_text_send"
+            android:enabled="false" />
+
+        <!-- 右侧拍照图标 -->
+        <ImageView
+            android:id="@+id/icon_camera"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/camera"
+            android:text="@string/content_description_camera"
+            android:layout_gravity="end"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+</LinearLayout>
